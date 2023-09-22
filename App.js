@@ -66,17 +66,18 @@ const App = () => {
   const sendQuestion = (q) => {
     // fetch 
     var result = "";
+    const h = chatHistory.reverse()
 
     console.log(chatHistory)
 
     setRunning(true)
     setResponse("")
 
-    for (let i = 0; i < chatHistory.length; i++) {
-      if (Object.keys(chatHistory[i])[0] == "Assistant") {
-        result += "Bot: " + chatHistory[i]["Assistant"]      
+    for (let i = 0; i < h.length; i++) {
+      if (Object.keys(h[i])[0] == "Assistant") {
+        result += "Bot: " + h[i]["Assistant"]      
       } else {
-        result += "Human: " + chatHistory[i]["Human"]
+        result += "Human: " + h[i]["Human"]
       }
     }
 
