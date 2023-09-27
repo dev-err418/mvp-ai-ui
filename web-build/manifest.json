@@ -1,0 +1,9 @@
+{
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "lang": "en",
+  "name": "UIv2",
+  "short_name": "UIv2",
+  "start_url": "/?utm_source=web_app_manifest",
+  "orientation": "portrait"
+}
