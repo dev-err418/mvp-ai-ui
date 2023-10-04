@@ -1,3 +1,3 @@
-import { Navigation } from "./src/Navigation";
+import { Navigation } from './pages/Navigation';
 
 export default Navigation;
